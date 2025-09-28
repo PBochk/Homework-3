@@ -1,0 +1,54 @@
+{
+    "name": "Dice",
+    "maps": [
+        {
+            "name": "Dice",
+            "id": "5b597b5e-15ff-4b72-96c2-1b135e341385",
+            "actions": [
+                {
+                    "name": "Roll",
+                    "type": "Button",
+                    "id": "889234af-6564-45ac-8a3e-2ab34d3c5f88",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rebind",
+                    "type": "Button",
+                    "id": "9243544a-ab50-4e7f-9b29-c66628ed5d42",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "79a1d875-43cd-4c14-8075-710738510f1e",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f7550b2-64a0-42de-9673-2296e17598ee",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rebind",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
