@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
-
 public class RoundManager : MonoBehaviour
 {
     public RoundResult RoundResult { get; private set; }

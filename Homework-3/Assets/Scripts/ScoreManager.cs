@@ -96,7 +96,6 @@ public class ScoreManager : MonoBehaviour
     private IEnumerator OnScoreChange()
     {
         yield return new WaitForFixedUpdate();
-        Debug.Log("Score changed");
         isScoreChanged = true;
         ScoreCorrectChange.Invoke();
     }
@@ -123,7 +122,6 @@ public class ScoreManager : MonoBehaviour
     {
         totalScore += increment;
         ScoreIncreased.Invoke();
-        Debug.Log(totalScore);
     }
 
     public RoundResult OnRoundEnd()

@@ -1407,6 +1407,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 330585546}
     m_Modifications:
     - target: {fileID: 231494256586600885, guid: fabb7de302d020249b6c68079b17ed26, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 330585545}
+    - target: {fileID: 231494256586600885, guid: fabb7de302d020249b6c68079b17ed26, type: 3}
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1668120489}

@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using System.Collections;
-using Unity.VisualScripting;
 
 // TODO: Split on pure UI view and input related classes
 public class UI_View : MonoBehaviour
@@ -44,12 +43,6 @@ public class UI_View : MonoBehaviour
 
     private Dictionary<RoundResult, string> results;
 
-    private void FixedUpdate()
-    {
-        Debug.Log(canvasRT.hasChanged);
-    }
-
-
     private void Awake()
     {
         results = new()
@@ -71,7 +64,6 @@ public class UI_View : MonoBehaviour
     private void ResizeChildrenOfCanvas()
     {
         inputFieldsRT.sizeDelta = canvasRT.sizeDelta;
-        Debug.Log(inputFieldsRT.sizeDelta + "  " + canvasRT.sizeDelta);
         roundEndRT.sizeDelta = canvasRT.sizeDelta;
         StartCoroutine(WaitForResize()); // Remove if resize in realtime is not needed
     }

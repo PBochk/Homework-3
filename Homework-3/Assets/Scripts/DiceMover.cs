@@ -1,9 +1,8 @@
-using NUnit.Framework;
 using UnityEngine;
 public class DiceMover : MonoBehaviour
 {
-    [SerializeField, UnityEngine.Range(5, 20)] private float maxPushingForce;
-    [SerializeField, UnityEngine.Range(5, 20)] private float maxTorque;
+    [SerializeField, Range(5, 20)] private float maxPushingForce;
+    [SerializeField, Range(5, 20)] private float maxTorque;
     private const float MIN_PUSHING_FORCE = 5f;
     private Rigidbody rb;
     private int[] directionalCoeffitients = { -1, 1 };
