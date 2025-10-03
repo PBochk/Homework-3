@@ -61,7 +61,7 @@ public class ScoreManager : MonoBehaviour
         {
             if (minScore - 2 <= value && value <= maxScore)
             {
-                loseScore = value - 1;
+                loseScore = value + 2;
                 drawScore = value + 1;
                 winScore = value;
                 StartCoroutine(OnScoreChange());
